@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="calendar">Calendar</string>
+    <string name="webbrowser">Web Browser</string>
+    <string name="send">Send</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="notifications">Notification</string>
+    <string name="test">TEST</string>
+    <string name="channel_name">Test</string>
+    <string name="channel_description">Description</string>
+    <string name="notif_title">Notification Title</string>
+    <string name="notif_desc">Notification Description</string>
+    <string name="settings">Settings</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="fragments">Fragments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment1">Fragment 1</string>
+    <string name="fragment2">Fragment 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="lists">Lists</string>
+    <string name="database">Databases</string>
+    <string name="storage">Storage</string>
+    <string name="shared_preferences">Shared Preferences</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="view_edit">View/Edit</string>
+    <string name="add">Add</string>
+    <string name="cache">Cache</string>
+    <string name="ext_storage">External Storage</string>
+    <string name="key">Key</string>
+    <string name="value">Value</string>
+    <string name="delete">Delete</string>
+    <string name="file_internal">internal</string>
+    <string name="file_cache">cache</string>
+    <string name="file_ext">external</string>
+</resources>
