@@ -6,7 +6,7 @@
     <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="notifications">Notification</string>
-    <string name="test">TEST</string>
+    <string name="test" translatable="false">TEST</string>
     <string name="channel_name">Test</string>
     <string name="channel_description">Description</string>
     <string name="notif_title">Notification Title</string>
@@ -21,8 +21,8 @@
     <string name="fragment2">Fragment 2</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="one">1</string>
-    <string name="two">2</string>
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
     <string name="lists">Lists</string>
     <string name="database">Databases</string>
     <string name="storage">Storage</string>
@@ -36,6 +36,6 @@
     <string name="value">Value</string>
     <string name="delete">Delete</string>
     <string name="file_internal">internal</string>
-    <string name="file_cache">cache</string>
+    <string name="file_cache" translatable="false">cache</string>
     <string name="file_ext">external</string>
 </resources>

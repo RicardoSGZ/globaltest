@@ -8,7 +8,6 @@
     <string name="next">Siguiente</string>
     <string name="notifications">Notificación</string>
     <string name="send">Enviar</string>
-    <string name="test">TEST</string>
     <string name="webbrowser">Navegador</string>
     <string name="notif_title">Título de la notificación</string>
     <string name="notif_desc">Descripción de la notificación</string>
@@ -18,8 +17,6 @@
     <string name="fragments">Fragmentos</string>
     <string name="fragment1">Fragmento 1</string>
     <string name="fragment2">Fragmento 2</string>
-    <string name="one">1</string>
-    <string name="two">2</string>
     <string name="lists">Listas</string>
     <string name="database">Bases de datos</string>
     <string name="storage">Almacenamiento</string>
@@ -32,7 +29,6 @@
     <string name="value">Valor</string>
     <string name="key">Clave</string>
     <string name="delete">Borrar</string>
-    <string name="file_cache">cache</string>
     <string name="file_ext">externo</string>
     <string name="file_internal">interno</string>
 </resources>

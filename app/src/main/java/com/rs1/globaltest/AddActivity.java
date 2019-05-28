@@ -3,6 +3,7 @@ package com.rs1.globaltest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -67,7 +68,7 @@ public class AddActivity extends AppCompatActivity {
                 break;
 
             case "External_Storage":
-                addExtStorage(filename_ext, key, value);
+                addExtStorage(this, filename_ext, key, value);
                 break;
 
             default:
@@ -116,7 +117,23 @@ public class AddActivity extends AppCompatActivity {
         startActivity(intent_home);
     }
 
-    public void addExtStorage(String filename, String key, String value) {
-
+    public void addExtStorage(Context context, String filename, String key, String value) {
+        String sep = ":";
+        if(ViewActivity.checkExtSto() == 0) {
+            try{
+                FileOutputStream fos = new FileOutputStream(new File(context.getExternalFilesDir("textos"), filename));
+                OutputStreamWriter osr = new OutputStreamWriter(fos);
+                BufferedWriter bw = new BufferedWriter(osr);
+                bw.write(key + sep + value);
+                bw.close();
+            }catch(IOException e){
+                Toast.makeText(getApplicationContext() , e.toString(), Toast.LENGTH_SHORT).show();
+            }
+            intent_home = new Intent(this, StorageActivity.class);
+            startActivity(intent_home);
+        }else{
+            Toast.makeText(this, "Error con el almacenamiento", Toast.LENGTH_SHORT).show();
+        }
     }
+
 }
