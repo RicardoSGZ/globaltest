@@ -31,4 +31,10 @@
     <string name="delete">Borrar</string>
     <string name="file_ext">externo</string>
     <string name="file_internal">interno</string>
+    <string name="images">Imágenes</string>
+    <string name="runt_design">Diseño en ejec.</string>
+    <string name="hint_word">Palabra...</string>
+    <string name="save">Guardar</string>
+    <string name="empty_not_saved">La palabra no se ha guardado porque está vacío</string>
+    <string name="new_entry">Nuevo</string>
 </resources>

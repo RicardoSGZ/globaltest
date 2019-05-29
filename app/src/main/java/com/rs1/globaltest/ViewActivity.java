@@ -4,9 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
+
+
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -34,6 +36,7 @@ public class ViewActivity extends AppCompatActivity {
     String filename_ext;
     String filename_cache;
     String group;
+    String db_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,7 @@ public class ViewActivity extends AppCompatActivity {
         filename_int = getString(R.string.file_internal);
         filename_ext = getString(R.string.file_ext);
         filename_cache = getString(R.string.file_cache);
+        db_name = "Base1";
         group = "Preferencias";
         intent = getIntent();
         cat = intent.getStringExtra(StorageActivity.CATEGORY);
@@ -62,6 +66,8 @@ public class ViewActivity extends AppCompatActivity {
             case "External_Storage":
                 viewExtSto(this, layout, filename_ext);
                 break;
+            case "Database":
+                viewDB(layout);
             default:
                 textView = new TextView(this);
                 textView.setText("Categoría no encontrada");
@@ -174,6 +180,11 @@ public class ViewActivity extends AppCompatActivity {
         else{
             Toast.makeText(this, "Error con el almacenamiento", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void viewDB(LinearLayout layout){
+
+
     }
 
 

@@ -1,9 +1,11 @@
 package com.rs1.globaltest;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.room.Database;
+
 import android.view.View;
 
 public class StorageActivity extends AppCompatActivity {
@@ -43,11 +45,6 @@ public class StorageActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void startViewDB(View view) {
-        Intent intent = new Intent(this, ViewActivity.class);
-        intent.putExtra(CATEGORY, "Database");
-        startActivity(intent);
-    }
 
     public void startAddShPref(View view) {
         Intent intent = new Intent(this, AddActivity.class);
@@ -72,9 +69,8 @@ public class StorageActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void startAddDB(View view) {
-        Intent intent = new Intent(this, AddActivity.class);
-        intent.putExtra(CATEGORY, "Database");
+    public void startDB(View view) {
+        Intent intent = new Intent(this, DatabaseActivity.class);
         startActivity(intent);
     }
 

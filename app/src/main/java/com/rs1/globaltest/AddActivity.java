@@ -3,10 +3,11 @@ package com.rs1.globaltest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
+
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -14,7 +15,6 @@ import android.widget.Toast;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
@@ -69,6 +69,10 @@ public class AddActivity extends AppCompatActivity {
 
             case "External_Storage":
                 addExtStorage(this, filename_ext, key, value);
+                break;
+
+            case "Database":
+                addDB(1, key, value);
                 break;
 
             default:
@@ -136,4 +140,10 @@ public class AddActivity extends AppCompatActivity {
         }
     }
 
+    public void addDB(int user_id, String first_name, String last_name) {
+
+    }
+
+
 }
+

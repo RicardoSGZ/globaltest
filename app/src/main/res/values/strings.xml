@@ -38,4 +38,11 @@
     <string name="file_internal">internal</string>
     <string name="file_cache" translatable="false">cache</string>
     <string name="file_ext">external</string>
+    <string name="images">Images</string>
+    <string name="multimedia" translatable="false">Multimedia</string>
+    <string name="runt_design">Runtime Design</string>
+    <string name="hint_word">Word...</string>
+    <string name="save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty</string>
+    <string name="new_entry">New</string>
 </resources>

@@ -1,11 +1,11 @@
 package com.rs1.globaltest;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 
 import java.util.ArrayList;
@@ -17,13 +17,13 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        RecyclerView rv = (RecyclerView) findViewById(R.id.rec_view);
+
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
+        RecyclerView rv = (RecyclerView) findViewById(R.id.rec_view);
         rv.setHasFixedSize(true);
         Context context = this;
         LinearLayoutManager llm = new LinearLayoutManager(context);
@@ -56,6 +56,7 @@ public class ListActivity extends AppCompatActivity {
         persons.add(new Person("Ricardo Sanz", "Huesca"));
         persons.add(new Person("Jorge Rodriguez", "Zaragoza"));
         persons.add(new Person("Pablo Escobar", "Zaragoza"));
+        persons.add(new Person("José García", "Madrid"));
     }
 
 
