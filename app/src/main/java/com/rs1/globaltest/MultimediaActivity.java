@@ -23,4 +23,9 @@ public class MultimediaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ImagesActivity.class);
         startActivity(intent);
     }
+
+    public void startVideos(View view) {
+        Intent intent = new Intent(this, VideosActivity.class);
+        startActivity(intent);
+    }
 }

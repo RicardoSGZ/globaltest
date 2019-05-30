@@ -37,4 +37,8 @@
     <string name="save">Guardar</string>
     <string name="empty_not_saved">La palabra no se ha guardado porque está vacío</string>
     <string name="new_entry">Nuevo</string>
+    <string name="video">Vídeos</string>
+    <string name="audio">Audios</string>
+    <string name="local">Local</string>
+    <string name="remote">Remoto</string>
 </resources>

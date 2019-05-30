@@ -7,14 +7,18 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/rs1_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/rs1_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".NewWordActivity"
+        <activity android:name=".VideosActivity"
+            android:label="@string/video"
+            android:parentActivityName=".MultimediaActivity"></activity>
+        <activity
+            android:name=".NewWordActivity"
             android:label="@string/new_entry"
-            android:parentActivityName=".DatabaseActivity"></activity>
+            android:parentActivityName=".DatabaseActivity" />
         <activity
             android:name=".DatabaseActivity"
             android:label="@string/database"

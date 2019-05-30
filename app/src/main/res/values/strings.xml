@@ -45,4 +45,9 @@
     <string name="save">Save</string>
     <string name="empty_not_saved">Word not saved because it is empty</string>
     <string name="new_entry">New</string>
+    <string name="video">Videos</string>
+    <string name="audio">Audios</string>
+    <string name="local">Local</string>
+    <string name="remote">Remote</string>
+    <string name="remote_image_url" translatable="false">http://xyz.rs1.es/public/ejemplos/atardecer.jpg</string>
 </resources>
